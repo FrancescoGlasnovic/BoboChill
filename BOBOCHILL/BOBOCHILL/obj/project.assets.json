@@ -8151,24 +8151,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ga-gama\\.nuget\\packages\\": {},
+    "C:\\Users\\franc\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ga-gama\\Documents\\GitHub\\BoboChill\\BOBOCHILL\\BOBOCHILL\\BOBOCHILL.csproj",
+      "projectUniqueName": "C:\\Users\\franc\\Documents\\GitHub\\BoboChill\\BOBOCHILL\\BOBOCHILL\\BOBOCHILL.csproj",
       "projectName": "BOBOCHILL",
-      "projectPath": "C:\\Users\\Ga-gama\\Documents\\GitHub\\BoboChill\\BOBOCHILL\\BOBOCHILL\\BOBOCHILL.csproj",
-      "packagesPath": "C:\\Users\\Ga-gama\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ga-gama\\Documents\\GitHub\\BoboChill\\BOBOCHILL\\BOBOCHILL\\obj\\",
+      "projectPath": "C:\\Users\\franc\\Documents\\GitHub\\BoboChill\\BOBOCHILL\\BOBOCHILL\\BOBOCHILL.csproj",
+      "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\franc\\Documents\\GitHub\\BoboChill\\BOBOCHILL\\BOBOCHILL\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ga-gama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
