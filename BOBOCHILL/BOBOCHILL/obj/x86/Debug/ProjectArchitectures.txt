@@ -1,1 +1,1 @@
-C:\Users\franc\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\BOBOCHILL.csproj;x86
+C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\BOBOCHILL.csproj;x86

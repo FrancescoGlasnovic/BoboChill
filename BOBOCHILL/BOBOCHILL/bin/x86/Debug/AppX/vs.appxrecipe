@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-A256VQH</Machine>
-    <WindowsUser>franc</WindowsUser>
+    <Machine>SS-43-14</Machine>
+    <WindowsUser>Gb-gama</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>c019b6bc-b298-4665-bb7d-fb9504fe4b56</PackageIdentityName>
     <PackageIdentityPublisher>CN=Ga-gama</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\franc\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\franc\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>B6F0AFA97307534297A21D893FE73128A4E31878129D5B43389BE32E596AC47A</RegisteredManifestChecksum>
+    <LayoutDir>C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>ED8EDE455AEEA30FE4C9D97A2EA1028ED8C8F958130E78993FFD2185BE7E117A</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>c019b6bc-b298-4665-bb7d-fb9504fe4b56_1.0.0.0_x86__xa50dvkgph76w</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>c019b6bc-b298-4665-bb7d-fb9504fe4b56_xa50dvkgph76w!App</RegisteredUserModeAppID>
     <RegisteredPackageID>c019b6bc-b298-4665-bb7d-fb9504fe4b56</RegisteredPackageID>
@@ -27,86 +27,86 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\franc\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-03-09T21:40:29.967</Modified>
+      <Modified>2021-03-10T13:05:59.735</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\franc\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\bin\x86\Debug\BOBOCHILL.exe">
+    <AppxPackagedFile Include="C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\bin\x86\Debug\BOBOCHILL.exe">
       <PackagePath>entrypoint\BOBOCHILL.exe</PackagePath>
-      <Modified>2021-03-09T21:40:29.558</Modified>
+      <Modified>2021-03-10T13:05:57.938</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
-      <Modified>2020-02-27T18:16:04.000</Modified>
+      <Modified>2020-02-27T17:16:04.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
-      <Modified>2019-03-18T17:36:56.000</Modified>
+      <Modified>2019-03-18T16:36:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franc\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2021-03-09T20:11:18.634</Modified>
+      <Modified>2021-03-10T12:47:47.815</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franc\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2021-03-09T20:11:18.629</Modified>
+      <Modified>2021-03-10T12:47:47.810</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franc\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-03-09T20:11:18.629</Modified>
+      <Modified>2021-03-10T12:47:47.810</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franc\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-03-09T20:11:18.630</Modified>
+      <Modified>2021-03-10T12:47:47.810</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franc\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-03-09T20:11:18.630</Modified>
+      <Modified>2021-03-10T12:47:47.811</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franc\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-03-09T20:11:18.630</Modified>
+      <Modified>2021-03-10T12:47:47.811</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franc\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-03-09T20:11:18.631</Modified>
+      <Modified>2021-03-10T12:47:47.812</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franc\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-03-09T20:11:18.631</Modified>
+      <Modified>2021-03-10T12:47:47.812</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franc\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\bin\x86\Debug\BOBOCHILL.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\bin\x86\Debug\BOBOCHILL.xr.xml">
       <PackagePath>BOBOCHILL.xr.xml</PackagePath>
-      <Modified>2021-03-09T21:11:15.254</Modified>
+      <Modified>2021-03-10T13:05:57.678</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franc\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-03-09T21:38:47.610</Modified>
+      <Modified>2021-03-10T13:05:57.758</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franc\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-03-09T21:38:47.610</Modified>
+      <Modified>2021-03-10T13:05:57.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2019-03-18T16:33:42.000</Modified>
+      <Modified>2019-03-18T15:33:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franc\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-03-09T21:11:15.867</Modified>
+      <Modified>2021-03-10T13:05:58.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\franc\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\bin\x86\Debug\Core\BOBOCHILL.exe">
+    <AppxPackagedFile Include="C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\bin\x86\Debug\Core\BOBOCHILL.exe">
       <PackagePath>BOBOCHILL.exe</PackagePath>
-      <Modified>2021-03-09T21:40:29.962</Modified>
+      <Modified>2021-03-10T13:05:59.722</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
