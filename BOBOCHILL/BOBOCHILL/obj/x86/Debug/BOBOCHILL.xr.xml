@@ -22,6 +22,7 @@
       <RootProperty Name="FocusVisualSecondaryBrush" />
       <RootProperty Name="SelectionHighlightColor" />
       <RootProperty Name="RequestedTheme" />
+      <RootProperty Name="RenderTransformOrigin" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
