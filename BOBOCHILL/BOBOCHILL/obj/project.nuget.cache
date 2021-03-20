@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IQXpvrhEnRS0NAHcZ4RYHSNGGL2Z9h99nYg2tgLmEq9DDD27c+0d9hqsO83FEeqObZJHW0Bna8gAhPd8xgY9ig==",
+  "dgSpecHash": "VAt9UwWVdD9mowswCJgBR6jtXBaCQJwb1FdqLBLHThoaWp9pdHRneVwBdtZO9wWgmqOjDdEqEo9ntzJzpg0fSA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gb-gama\\Documents\\GitHub\\BoboChill\\BOBOCHILL\\BOBOCHILL\\BOBOCHILL.csproj",
+  "projectFilePath": "C:\\Users\\franc\\Documents\\GitHub\\BoboChill\\BOBOCHILL\\BOBOCHILL\\BOBOCHILL.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.8-rel-28605-00\\microsoft.net.native.compiler.2.2.8-rel-28605-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.10\\microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",

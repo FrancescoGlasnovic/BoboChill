@@ -53,6 +53,10 @@ namespace BOBOCHILL
         int naRedu = 1;
         int brBacanja = 0;
         //Prva
+        int pozicijaB1P = -1;
+        int pozicijaR1P = -31;
+        int pozicijaG1P = -21;
+        int pozicijaY1P = -11;
         int pozicijaB1 = -1;
         int pozicijaR1 = -31;
         int pozicijaG1 = -21;
@@ -80,27 +84,77 @@ namespace BOBOCHILL
             int d;
             d = rnd.Next(1, 7);
             Kocka.Text = Convert.ToString(d);
-
+            pozicijaB1P = pozicijaB1;
+            pozicijaG1P = pozicijaG1;
+            pozicijaR1P = pozicijaR1;
+            pozicijaY1P = pozicijaY1;
             if (naRedu == 1 && pozicijaB1 >= 0)
             {
 
 
                 pozicijaB1 += d;
-
+                if(pozicijaB1==pozicijaR1)
+                {
+                    pozicijaR1 = -31;
+                }
+                else if(pozicijaB1 == pozicijaG1)
+                {
+                    pozicijaG1 = -21;
+                }
+                else if(pozicijaB1 == pozicijaY1)
+                {
+                    pozicijaY1 = -11;
+                }
             }
             else if (naRedu == 2 && pozicijaY1 >= 0)
             {
 
                 pozicijaY1 += d;
+                if (pozicijaY1 == pozicijaR1)
+                {
+                    pozicijaR1 = -31;
+                }
+                else if (pozicijaY1 == pozicijaG1)
+                {
+                    pozicijaG1 = -21;
+                }
+                else if (pozicijaY1 == pozicijaB1)
+                {
+                    pozicijaB1 = -1;
+                }
             }
             else if (naRedu == 3 && pozicijaG1 >= 0)
             {
 
                 pozicijaG1 += d;
+                if (pozicijaG1 == pozicijaR1)
+                {
+                    pozicijaR1 = -31;
+                }
+                else if (pozicijaG1 == pozicijaB1)
+                {
+                    pozicijaB1 = -1;
+                }
+                else if (pozicijaG1 == pozicijaY1)
+                {
+                    pozicijaY1 = -11;
+                }
             }
             else if (naRedu == 4 && pozicijaR1 >= 0)
             {
                 pozicijaR1 += d;
+                if (pozicijaR1 == pozicijaB1)
+                {
+                    pozicijaB1 = -1;
+                }
+                else if (pozicijaR1 == pozicijaG1)
+                {
+                    pozicijaG1 = -21;
+                }
+                else if (pozicijaR1 == pozicijaY1)
+                {
+                    pozicijaY1 = -11;
+                }
             }
 
             if (d == 6)
@@ -144,12 +198,137 @@ namespace BOBOCHILL
 
                 }
             }
-       
+            
               
             
             if(naRedu==1 && pozicijaB1>=0)
             {
-                switch(pozicijaB1)
+                switch (pozicijaB1P)
+                {
+                    case 1:
+                        B_Izlaz_1_.Text = " .";
+                        break;
+                    case 2:
+                        Poz2.Text = " .";
+                        break;
+                    case 3:
+                        Poz3.Text = " .";
+                        break;
+                    case 4:
+                        Poz4.Text = " .";
+                        break;
+                    case 5:
+                        Poz5.Text = " .";
+                        break;
+                    case 6:
+                        Poz6.Text = " .";
+                        break;
+                    case 7:
+                        Poz7.Text = " .";
+                        break;
+                    case 8:
+                        Poz8.Text = " .";
+                        break;
+                    case 9:
+                        Poz9.Text = " .";
+                        break;
+                    case 10:
+                        Y_Kraj_10_.Text = " .";
+                        break;
+                    case 11:
+                        Y_Izlaz_11_.Text = " .";
+                        break;
+                    case 12:
+                        Poz12.Text = " .";
+                        break;
+                    case 13:
+                        Poz13.Text = " .";
+                        break;
+                    case 14:
+                        Poz14.Text = " .";
+                        break;
+                    case 15:
+                        Poz15.Text = " .";
+                        break;
+                    case 16:
+                        Poz16.Text = " .";
+                        break;
+                    case 17:
+                        Poz17.Text = " .";
+                        break;
+                    case 18:
+                        Poz18.Text = " .";
+                        break;
+                    case 19:
+                        Poz19.Text = " .";
+                        break;
+                    case 20:
+                        G_Kraj_20_.Text = " .";
+                        break;
+                    case 21:
+                        G_Izlaz_21_.Text = " .";
+                        break;
+                    case 22:
+                        Poz22.Text = " .";
+                        break;
+                    case 23:
+                        Poz23.Text = " .";
+                        break;
+                    case 24:
+                        Poz24.Text = " .";
+                        break;
+                    case 25:
+                        Poz25.Text = " .";
+                        break;
+                    case 26:
+                        Poz26.Text = " .";
+                        break;
+                    case 27:
+                        Poz27.Text = " .";
+                        break;
+                    case 28:
+                        Poz28.Text = " .";
+                        break;
+                    case 29:
+                        Poz29.Text = " .";
+                        break;
+                    case 30:
+                        R_Kraj_30_.Text = " .";
+                        break;
+                    case 31:
+                        R_Izlaz_31_.Text = " .";
+                        break;
+                    case 32:
+                        Poz32.Text = " .";
+                        break;
+                    case 33:
+                        Poz33.Text = " .";
+                        break;
+                    case 34:
+                        Poz34.Text = " .";
+                        break;
+                    case 35:
+                        Poz35.Text = " .";
+                        break;
+                    case 36:
+                        Poz36.Text = " .";
+                        break;
+                    case 37:
+                        Poz37.Text = " .";
+                        break;
+                    case 38:
+                        Poz38.Text = " .";
+                        break;
+                    case 39:
+                        Poz39.Text = " .";
+                        break;
+                    case 40:
+                        B_Kraj_0_.Text = " .";
+                        break;
+
+
+                }
+                switch (pozicijaB1)
                 {
                     case 1:
                         B_Izlaz_1_.Text = B1.Text;
@@ -277,6 +456,131 @@ namespace BOBOCHILL
             }
             else if (naRedu == 2 && pozicijaY1 >= 0)
             {
+                switch (pozicijaY1P)
+                {
+                    case 1:
+                        B_Izlaz_1_.Text = " .";
+                        break;
+                    case 2:
+                        Poz2.Text = " .";
+                        break;
+                    case 3:
+                        Poz3.Text = " .";
+                        break;
+                    case 4:
+                        Poz4.Text = " .";
+                        break;
+                    case 5:
+                        Poz5.Text = " .";
+                        break;
+                    case 6:
+                        Poz6.Text = " .";
+                        break;
+                    case 7:
+                        Poz7.Text = " .";
+                        break;
+                    case 8:
+                        Poz8.Text = " .";
+                        break;
+                    case 9:
+                        Poz9.Text = " .";
+                        break;
+                    case 10:
+                        Y_Kraj_10_.Text = " .";
+                        break;
+                    case 11:
+                        Y_Izlaz_11_.Text = " .";
+                        break;
+                    case 12:
+                        Poz12.Text = " .";
+                        break;
+                    case 13:
+                        Poz13.Text = " .";
+                        break;
+                    case 14:
+                        Poz14.Text = " .";
+                        break;
+                    case 15:
+                        Poz15.Text = " .";
+                        break;
+                    case 16:
+                        Poz16.Text = " .";
+                        break;
+                    case 17:
+                        Poz17.Text = " .";
+                        break;
+                    case 18:
+                        Poz18.Text = " .";
+                        break;
+                    case 19:
+                        Poz19.Text = " .";
+                        break;
+                    case 20:
+                        G_Kraj_20_.Text = " .";
+                        break;
+                    case 21:
+                        G_Izlaz_21_.Text = " .";
+                        break;
+                    case 22:
+                        Poz22.Text = " .";
+                        break;
+                    case 23:
+                        Poz23.Text = " .";
+                        break;
+                    case 24:
+                        Poz24.Text = " .";
+                        break;
+                    case 25:
+                        Poz25.Text = " .";
+                        break;
+                    case 26:
+                        Poz26.Text = " .";
+                        break;
+                    case 27:
+                        Poz27.Text = " .";
+                        break;
+                    case 28:
+                        Poz28.Text = " .";
+                        break;
+                    case 29:
+                        Poz29.Text = " .";
+                        break;
+                    case 30:
+                        R_Kraj_30_.Text = " .";
+                        break;
+                    case 31:
+                        R_Izlaz_31_.Text = " .";
+                        break;
+                    case 32:
+                        Poz32.Text = " .";
+                        break;
+                    case 33:
+                        Poz33.Text = " .";
+                        break;
+                    case 34:
+                        Poz34.Text = " .";
+                        break;
+                    case 35:
+                        Poz35.Text = " .";
+                        break;
+                    case 36:
+                        Poz36.Text = " .";
+                        break;
+                    case 37:
+                        Poz37.Text = " .";
+                        break;
+                    case 38:
+                        Poz38.Text = " .";
+                        break;
+                    case 39:
+                        Poz39.Text = " .";
+                        break;
+                    case 40:
+                        B_Kraj_0_.Text = " .";
+                        break;
+
+
+                }
                 switch (pozicijaY1)
                 {
                     case 1:
@@ -405,6 +709,131 @@ namespace BOBOCHILL
             }
             else if (naRedu == 3 && pozicijaG1 >= 0)
             {
+                switch (pozicijaG1P)
+                {
+                    case 1:
+                        B_Izlaz_1_.Text = " .";
+                        break;
+                    case 2:
+                        Poz2.Text = " .";
+                        break;
+                    case 3:
+                        Poz3.Text = " .";
+                        break;
+                    case 4:
+                        Poz4.Text = " .";
+                        break;
+                    case 5:
+                        Poz5.Text = " .";
+                        break;
+                    case 6:
+                        Poz6.Text = " .";
+                        break;
+                    case 7:
+                        Poz7.Text = " .";
+                        break;
+                    case 8:
+                        Poz8.Text = " .";
+                        break;
+                    case 9:
+                        Poz9.Text = " .";
+                        break;
+                    case 10:
+                        Y_Kraj_10_.Text = " .";
+                        break;
+                    case 11:
+                        Y_Izlaz_11_.Text = " .";
+                        break;
+                    case 12:
+                        Poz12.Text = " .";
+                        break;
+                    case 13:
+                        Poz13.Text = " .";
+                        break;
+                    case 14:
+                        Poz14.Text = " .";
+                        break;
+                    case 15:
+                        Poz15.Text = " .";
+                        break;
+                    case 16:
+                        Poz16.Text = " .";
+                        break;
+                    case 17:
+                        Poz17.Text = " .";
+                        break;
+                    case 18:
+                        Poz18.Text = " .";
+                        break;
+                    case 19:
+                        Poz19.Text = " .";
+                        break;
+                    case 20:
+                        G_Kraj_20_.Text = " .";
+                        break;
+                    case 21:
+                        G_Izlaz_21_.Text = " .";
+                        break;
+                    case 22:
+                        Poz22.Text = " .";
+                        break;
+                    case 23:
+                        Poz23.Text = " .";
+                        break;
+                    case 24:
+                        Poz24.Text = " .";
+                        break;
+                    case 25:
+                        Poz25.Text = " .";
+                        break;
+                    case 26:
+                        Poz26.Text = " .";
+                        break;
+                    case 27:
+                        Poz27.Text = " .";
+                        break;
+                    case 28:
+                        Poz28.Text = " .";
+                        break;
+                    case 29:
+                        Poz29.Text = " .";
+                        break;
+                    case 30:
+                        R_Kraj_30_.Text = " .";
+                        break;
+                    case 31:
+                        R_Izlaz_31_.Text = " .";
+                        break;
+                    case 32:
+                        Poz32.Text = " .";
+                        break;
+                    case 33:
+                        Poz33.Text = " .";
+                        break;
+                    case 34:
+                        Poz34.Text = " .";
+                        break;
+                    case 35:
+                        Poz35.Text = " .";
+                        break;
+                    case 36:
+                        Poz36.Text = " .";
+                        break;
+                    case 37:
+                        Poz37.Text = " .";
+                        break;
+                    case 38:
+                        Poz38.Text = " .";
+                        break;
+                    case 39:
+                        Poz39.Text = " .";
+                        break;
+                    case 40:
+                        B_Kraj_0_.Text = " .";
+                        break;
+
+
+                }
                 switch (pozicijaG1)
                 {
                     case 1:
@@ -533,6 +962,131 @@ namespace BOBOCHILL
             }
             else if (naRedu == 4 && pozicijaR1 >= 0)
             {
+                switch (pozicijaR1P)
+                {
+                    case 1:
+                        B_Izlaz_1_.Text = " .";
+                        break;
+                    case 2:
+                        Poz2.Text = " .";
+                        break;
+                    case 3:
+                        Poz3.Text = " .";
+                        break;
+                    case 4:
+                        Poz4.Text = " .";
+                        break;
+                    case 5:
+                        Poz5.Text = " .";
+                        break;
+                    case 6:
+                        Poz6.Text = " .";
+                        break;
+                    case 7:
+                        Poz7.Text = " .";
+                        break;
+                    case 8:
+                        Poz8.Text = " .";
+                        break;
+                    case 9:
+                        Poz9.Text = " .";
+                        break;
+                    case 10:
+                        Y_Kraj_10_.Text = " .";
+                        break;
+                    case 11:
+                        Y_Izlaz_11_.Text = " .";
+                        break;
+                    case 12:
+                        Poz12.Text = " .";
+                        break;
+                    case 13:
+                        Poz13.Text = " .";
+                        break;
+                    case 14:
+                        Poz14.Text = " .";
+                        break;
+                    case 15:
+                        Poz15.Text = " .";
+                        break;
+                    case 16:
+                        Poz16.Text = " .";
+                        break;
+                    case 17:
+                        Poz17.Text = " .";
+                        break;
+                    case 18:
+                        Poz18.Text = " .";
+                        break;
+                    case 19:
+                        Poz19.Text = " .";
+                        break;
+                    case 20:
+                        G_Kraj_20_.Text = " .";
+                        break;
+                    case 21:
+                        G_Izlaz_21_.Text = " .";
+                        break;
+                    case 22:
+                        Poz22.Text = " .";
+                        break;
+                    case 23:
+                        Poz23.Text = " .";
+                        break;
+                    case 24:
+                        Poz24.Text = " .";
+                        break;
+                    case 25:
+                        Poz25.Text = " .";
+                        break;
+                    case 26:
+                        Poz26.Text = " .";
+                        break;
+                    case 27:
+                        Poz27.Text = " .";
+                        break;
+                    case 28:
+                        Poz28.Text = " .";
+                        break;
+                    case 29:
+                        Poz29.Text = " .";
+                        break;
+                    case 30:
+                        R_Kraj_30_.Text = " .";
+                        break;
+                    case 31:
+                        R_Izlaz_31_.Text = " .";
+                        break;
+                    case 32:
+                        Poz32.Text = " .";
+                        break;
+                    case 33:
+                        Poz33.Text = " .";
+                        break;
+                    case 34:
+                        Poz34.Text = " .";
+                        break;
+                    case 35:
+                        Poz35.Text = " .";
+                        break;
+                    case 36:
+                        Poz36.Text = " .";
+                        break;
+                    case 37:
+                        Poz37.Text = " .";
+                        break;
+                    case 38:
+                        Poz38.Text = " .";
+                        break;
+                    case 39:
+                        Poz39.Text = " .";
+                        break;
+                    case 40:
+                        B_Kraj_0_.Text = " .";
+                        break;
+
+
+                }
                 switch (pozicijaR1)
                 {
                     case 1:

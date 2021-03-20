@@ -89,3 +89,4 @@ C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\obj\x86\Debug\Mu
 C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885238160000000.json
 C:\Users\Gb-gama\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885274160000000.json
+C:\Users\franc\Documents\GitHub\BoboChill\BOBOCHILL\BOBOCHILL\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885238160000000.json
