@@ -121,6 +121,7 @@ namespace BOBOCHILL
                 else if (pozicijaY1 == pozicijaB1)
                 {
                     pozicijaB1 = -1;
+
                 }
             }
             else if (naRedu == 3 && pozicijaG1 >= 0)
