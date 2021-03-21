@@ -46,10 +46,10 @@ namespace BOBOCHILL
         {
             
         }
-        int prviB1 = 0;
-        int prviR1 = 0;
-        int prviG1 = 0;
-        int prviY1 = 0;
+        int prviB1_Izaso = 1;
+        int prviR1_Izaso = 0;
+        int prviG1_Izaso = 0;
+        int prviY1_Izaso = 0;
         int naRedu = 1;
         int brBacanja = 0;
         //Prva
@@ -62,16 +62,28 @@ namespace BOBOCHILL
         int pozicijaG1 = -21;
         int pozicijaY1 = -11;
         //Druga
+        int pozicijaB2P = -1;
+        int pozicijaR2P = -31;
+        int pozicijaG2P = -21;
+        int pozicijaY2P = -11;
         int pozicijaB2 = -1;
         int pozicijaR2 = -1;
         int pozicijaG2 = -1;
         int pozicijaY2 = -11;
         //Treca
+        int pozicijaB3P = -1;
+        int pozicijaR3P = -31;
+        int pozicijaG3P = -21;
+        int pozicijaY3P = -11;
         int pozicijaB3 = -1;
         int pozicijaR3 = -1;
         int pozicijaG3 = -1;
         int pozicijaY3 = -11;
         //Cetvrta
+        int pozicijaB4P = -1;
+        int pozicijaR4P = -31;
+        int pozicijaG4P = -21;
+        int pozicijaY4P = -11;
         int pozicijaB4 = -1;
         int pozicijaR4 = -1;
         int pozicijaG4 = -1;
@@ -93,18 +105,29 @@ namespace BOBOCHILL
 
 
                 pozicijaB1 += d;
-                if(pozicijaB1==pozicijaR1)
+                if (pozicijaB1 == pozicijaR1)
                 {
                     pozicijaR1 = -31;
+                    prviR1_Izaso = 0;
                 }
-                else if(pozicijaB1 == pozicijaG1)
+                else if (pozicijaB1 == pozicijaG1)
                 {
                     pozicijaG1 = -21;
+                    prviG1_Izaso = 0;
                 }
-                else if(pozicijaB1 == pozicijaY1)
+                else if (pozicijaB1 == pozicijaY1)
                 {
                     pozicijaY1 = -11;
+                    prviY1_Izaso = 0;
                 }
+
+
+                if (pozicijaB1 > 44)
+                {
+                    pozicijaB1 -= d;
+
+                }
+
             }
             else if (naRedu == 2 && pozicijaY1 >= 0)
             {
@@ -113,16 +136,29 @@ namespace BOBOCHILL
                 if (pozicijaY1 == pozicijaR1)
                 {
                     pozicijaR1 = -31;
+                    prviR1_Izaso = 0;
                 }
                 else if (pozicijaY1 == pozicijaG1)
                 {
                     pozicijaG1 = -21;
+                    prviG1_Izaso = 0;
                 }
                 else if (pozicijaY1 == pozicijaB1)
                 {
                     pozicijaB1 = -1;
+                    prviB1_Izaso = 0;
 
                 }
+                if (pozicijaY1 >= 40)
+                {
+                    pozicijaY1 -= 40;
+                    prviY1_Izaso = 1;
+                }
+                if (prviY1_Izaso == 1 && pozicijaY1 > 10)
+                {
+                    pozicijaB1 -= d;
+                }
+                    
             }
             else if (naRedu == 3 && pozicijaG1 >= 0)
             {
@@ -131,14 +167,28 @@ namespace BOBOCHILL
                 if (pozicijaG1 == pozicijaR1)
                 {
                     pozicijaR1 = -31;
+                    prviR1_Izaso = 0;
                 }
                 else if (pozicijaG1 == pozicijaB1)
                 {
                     pozicijaB1 = -1;
+                    prviB1_Izaso = 0;
                 }
                 else if (pozicijaG1 == pozicijaY1)
                 {
                     pozicijaY1 = -11;
+                    prviY1_Izaso = 0;
+                }
+                if (pozicijaG1 >= 40)
+                {
+                    pozicijaG1 -= 40;
+                    prviG1_Izaso = 1;
+                    
+
+                }
+                if (prviG1_Izaso == 1 && pozicijaG1 > 20)
+                {
+                    pozicijaG1 -= d;
                 }
             }
             else if (naRedu == 4 && pozicijaR1 >= 0)
@@ -147,14 +197,27 @@ namespace BOBOCHILL
                 if (pozicijaR1 == pozicijaB1)
                 {
                     pozicijaB1 = -1;
+                    prviB1_Izaso = 0;
                 }
                 else if (pozicijaR1 == pozicijaG1)
                 {
                     pozicijaG1 = -21;
+                    prviG1_Izaso = 0;
                 }
                 else if (pozicijaR1 == pozicijaY1)
                 {
                     pozicijaY1 = -11;
+                    prviY1_Izaso = 0;
+                }
+                if (pozicijaR1 >= 40)
+                {
+                    pozicijaR1 -= 40;
+                    prviR1_Izaso = 1;
+
+                }
+                if (prviR1_Izaso == 1 && pozicijaR1 > 30)
+                {
+                    pozicijaR1 -= d;
                 }
             }
 
@@ -162,9 +225,10 @@ namespace BOBOCHILL
             {
                 if (naRedu == 1)
                 {
-                    B_Izlaz_1_.Text = B1.Text;
+                    
                     if (pozicijaB1 < 0)
                     {
+                        B_Izlaz_1_.Text = B1.Text;
                         pozicijaB1 = Math.Abs(pozicijaB1);
                     }
 
@@ -173,27 +237,30 @@ namespace BOBOCHILL
                 }
                 else if (naRedu == 2)
                 {
-                    Y_Izlaz_11_.Text = Y1.Text;
+                    
                     if (pozicijaY1 < 0)
                     {
+                        Y_Izlaz_11_.Text = Y1.Text;
                         pozicijaY1 = Math.Abs(pozicijaY1);
                     }
 
                 }
                 else if (naRedu == 3)
                 {
-                    G_Izlaz_21_.Text = G1.Text;
+                    
                     if (pozicijaG1 < 0)
                     {
+                        G_Izlaz_21_.Text = G1.Text;
                         pozicijaG1 = Math.Abs(pozicijaG1);
                     }
 
                 }
                 else if (naRedu == 4)
                 {
-                    R_Izlaz_31_.Text = R1.Text;
+                    
                     if (pozicijaR1 < 0)
                     {
+                        R_Izlaz_31_.Text = R1.Text;
                         pozicijaR1 = Math.Abs(pozicijaR1);
                     }
 
@@ -326,6 +393,18 @@ namespace BOBOCHILL
                     case 40:
                         B_Kraj_0_.Text = " .";
                         break;
+                    case 41:
+                        BUlaz1.Text = " .";
+                        break;
+                    case 42:
+                        BUlaz2.Text = " .";
+                        break;
+                    case 43:
+                        BUlaz3.Text = " .";
+                        break;
+                    case 44:
+                        BUlaz4.Text = " .";
+                        break;
 
 
                 }
@@ -450,6 +529,19 @@ namespace BOBOCHILL
                         break;
                     case 40:
                         B_Kraj_0_.Text = B1.Text;
+                        pozicijaB1 = 0;
+                        break;
+                    case 41:
+                        BUlaz1.Text = B1.Text;
+                        break;
+                    case 42:
+                        BUlaz2.Text = B1.Text;
+                        break;
+                    case 43:
+                        BUlaz3.Text = B1.Text;
+                        break;
+                    case 44:
+                        BUlaz4.Text = B1.Text;
                         break;
 
 
@@ -490,15 +582,20 @@ namespace BOBOCHILL
                         Y_Kraj_10_.Text = " .";
                         break;
                     case 11:
-                        Y_Izlaz_11_.Text = " .";
+                        
+                            Y_Izlaz_11_.Text = " .";
+                        
                         break;
                     case 12:
+                        
                         Poz12.Text = " .";
                         break;
                     case 13:
+                      
                         Poz13.Text = " .";
                         break;
                     case 14:
+                       
                         Poz14.Text = " .";
                         break;
                     case 15:
@@ -615,16 +712,32 @@ namespace BOBOCHILL
                         Y_Kraj_10_.Text = Y1.Text;
                         break;
                     case 11:
-                        Y_Izlaz_11_.Text = Y1.Text;
+                        if (prviY1_Izaso == 0)
+                            Y_Izlaz_11_.Text = Y1.Text;
+                        else
+                            YUlaz1.Text = Y1.Text;
+                        
                         break;
                     case 12:
-                        Poz12.Text = Y1.Text;
+                        if (prviY1_Izaso == 0)
+                            Poz12.Text = Y1.Text;
+                        else
+                            YUlaz2.Text = Y1.Text;
+                        
                         break;
                     case 13:
-                        Poz13.Text = Y1.Text;
+                        if (prviY1_Izaso == 0)
+                            Poz13.Text = Y1.Text;
+                        else
+                            YUlaz3.Text = Y1.Text;
+                        
                         break;
                     case 14:
-                        Poz14.Text = Y1.Text;
+                        if (prviY1_Izaso == 0)
+                            Poz14.Text = Y1.Text;
+                        else
+                            YUlaz4.Text = Y1.Text;
+                        
                         break;
                     case 15:
                         Poz15.Text = Y1.Text;
@@ -703,6 +816,7 @@ namespace BOBOCHILL
                         break;
                     case 40:
                         B_Kraj_0_.Text = Y1.Text;
+                        pozicijaY1 = 0;
                         break;
 
 
@@ -898,16 +1012,31 @@ namespace BOBOCHILL
                         G_Kraj_20_.Text = G1.Text;
                         break;
                     case 21:
-                        G_Izlaz_21_.Text = G1.Text;
+                        if (prviG1_Izaso == 0)
+                            G_Izlaz_21_.Text = G1.Text;
+                        else
+                            GUlaz1.Text = G1.Text;
                         break;
                     case 22:
-                        Poz22.Text = G1.Text;
+                        if (prviG1_Izaso == 0)
+                            Poz22.Text = G1.Text;
+                        else
+                            GUlaz2.Text = G1.Text;
+                        
                         break;
                     case 23:
-                        Poz23.Text = G1.Text;
+                        if (prviG1_Izaso == 0)
+                            Poz23.Text = G1.Text;
+                        else
+                            GUlaz3.Text = G1.Text;
+                        
                         break;
                     case 24:
-                        Poz24.Text = G1.Text;
+                        if (prviG1_Izaso == 0)
+                            Poz24.Text = G1.Text;
+                        else
+                            GUlaz4.Text = G1.Text;
+                        
                         break;
                     case 25:
                         Poz25.Text = G1.Text;
@@ -956,6 +1085,7 @@ namespace BOBOCHILL
                         break;
                     case 40:
                         B_Kraj_0_.Text = G1.Text;
+                        pozicijaG1 = 0;
                         break;
 
 
@@ -1181,16 +1311,31 @@ namespace BOBOCHILL
                         R_Kraj_30_.Text = R1.Text;
                         break;
                     case 31:
-                        R_Izlaz_31_.Text = R1.Text;
+                        if (prviR1_Izaso == 0)
+                            R_Izlaz_31_.Text = R1.Text;
+                        else
+                            RUlaz1.Text = R1.Text;
                         break;
                     case 32:
-                        Poz32.Text = R1.Text;
+                        if (prviR1_Izaso == 0)
+                            Poz32.Text = R1.Text;
+                        else
+                            RUlaz2.Text = R1.Text;
+                        
                         break;
                     case 33:
-                        Poz33.Text = R1.Text;
+                        if (prviR1_Izaso == 0)
+                            Poz33.Text = R1.Text;
+                        else
+                            RUlaz3.Text = R1.Text;
+                        
                         break;
                     case 34:
-                        Poz34.Text = R1.Text;
+                        if (prviR1_Izaso == 0)
+                            Poz34.Text = R1.Text;
+                        else
+                            RUlaz4.Text = R1.Text;
+                        
                         break;
                     case 35:
                         Poz35.Text = R1.Text;
@@ -1209,6 +1354,7 @@ namespace BOBOCHILL
                         break;
                     case 40:
                         B_Kraj_0_.Text = R1.Text;
+                        pozicijaR1 = 0;
                         break;
 
 

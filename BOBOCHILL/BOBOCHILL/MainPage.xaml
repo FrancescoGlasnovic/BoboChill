@@ -77,22 +77,22 @@
         </TextBlock>
         <TextBlock x:Name="Poz33" HorizontalAlignment="Left" Margin="982,588,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="44" SelectionChanged="TextBlock_SelectionChanged_1" FocusVisualPrimaryBrush="Black" FocusVisualSecondaryBrush="#99000000" SelectionHighlightColor="Black"/>
         <TextBlock x:Name="R_Kraj_30_" HorizontalAlignment="Left" Margin="1142,505,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="44" SelectionChanged="TextBlock_SelectionChanged_1"/>
-        <TextBlock HorizontalAlignment="Left" Margin="886,520,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
-        <TextBlock HorizontalAlignment="Left" Margin="943,520,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
-        <TextBlock HorizontalAlignment="Left" Margin="1003,520,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
-        <TextBlock HorizontalAlignment="Left" Margin="1065,520,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
-        <TextBlock HorizontalAlignment="Left" Margin="449,520,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
-        <TextBlock HorizontalAlignment="Left" Margin="506,520,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
-        <TextBlock HorizontalAlignment="Left" Margin="566,520,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
-        <TextBlock HorizontalAlignment="Left" Margin="628,520,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
-        <TextBlock HorizontalAlignment="Left" Margin="754,181,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
-        <TextBlock HorizontalAlignment="Left" Margin="754,242,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
-        <TextBlock HorizontalAlignment="Left" Margin="754,315,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
-        <TextBlock HorizontalAlignment="Left" Margin="754,396,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
-        <TextBlock HorizontalAlignment="Left" Margin="754,610,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
-        <TextBlock HorizontalAlignment="Left" Margin="754,685,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="51" Width="33"/>
-        <TextBlock HorizontalAlignment="Left" Margin="754,744,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33" RenderTransformOrigin="0.644,0.493"/>
-        <TextBlock HorizontalAlignment="Left" Margin="754,809,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="33"/>
+        <TextBlock x:Name="RUlaz4" HorizontalAlignment="Left" Margin="886,520,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
+        <TextBlock x:Name="RUlaz3" HorizontalAlignment="Left" Margin="943,520,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
+        <TextBlock x:Name="RUlaz2" HorizontalAlignment="Left" Margin="1003,520,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
+        <TextBlock x:Name="RUlaz1" HorizontalAlignment="Left" Margin="1065,520,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
+        <TextBlock x:Name="YUlaz1" HorizontalAlignment="Left" Margin="449,520,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
+        <TextBlock x:Name="YUlaz2" HorizontalAlignment="Left" Margin="506,520,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
+        <TextBlock x:Name="YUlaz3" HorizontalAlignment="Left" Margin="566,520,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
+        <TextBlock x:Name="YUlaz4" HorizontalAlignment="Left" Margin="628,520,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
+        <TextBlock x:Name="GUlaz1" HorizontalAlignment="Left" Margin="754,181,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
+        <TextBlock x:Name="GUlaz2" HorizontalAlignment="Left" Margin="754,242,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
+        <TextBlock x:Name="GUlaz3" HorizontalAlignment="Left" Margin="754,315,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
+        <TextBlock x:Name="GUlaz4" HorizontalAlignment="Left" Margin="754,396,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
+        <TextBlock x:Name="BUlaz4" HorizontalAlignment="Left" Margin="754,610,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33"/>
+        <TextBlock x:Name="BUlaz3" HorizontalAlignment="Left" Margin="754,685,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="51" Width="33"/>
+        <TextBlock x:Name="BUlaz2" HorizontalAlignment="Left" Margin="754,744,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="33" RenderTransformOrigin="0.644,0.493"/>
+        <TextBlock x:Name="BUlaz1" HorizontalAlignment="Left" Margin="754,809,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="43" Width="33"/>
         <TextBlock x:Name="B1" HorizontalAlignment="Left" Margin="388,740,0,0" Text="B1" TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="44" SelectionChanged="TextBlock_SelectionChanged_B1" FocusVisualPrimaryBrush="Black" FocusVisualSecondaryBrush="#99000000" SelectionHighlightColor="Black"/>
         <TextBlock x:Name="B2" HorizontalAlignment="Left" Margin="450,740,0,0" Text="B2" TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="44" SelectionChanged="TextBlock_SelectionChanged_1" FocusVisualPrimaryBrush="Black" FocusVisualSecondaryBrush="#99000000" SelectionHighlightColor="Black"/>
         <TextBlock x:Name="B3" HorizontalAlignment="Left" Margin="388,803,0,0" Text="B3" TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="44" SelectionChanged="TextBlock_SelectionChanged_1" FocusVisualPrimaryBrush="Black" FocusVisualSecondaryBrush="#99000000" SelectionHighlightColor="Black"/>
@@ -116,5 +116,21 @@
         <TextBlock x:Name="Y5" HorizontalAlignment="Left" Margin="88,200,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:Name="G5" HorizontalAlignment="Left" Margin="88,246,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:Name="R5" HorizontalAlignment="Left" Margin="88,300,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:Name="BuB1" Content="B1" Margin="257,879,0,0" VerticalAlignment="Top" Width="37" Height="37"/>
+        <Button x:Name="BuB2" Content="B2" Margin="318,879,0,0" VerticalAlignment="Top" Width="37" Height="37"/>
+        <Button x:Name="BuB3" Content="B3" Margin="377,879,0,0" VerticalAlignment="Top" Width="37" Height="37"/>
+        <Button x:Name="BuB4" Content="B4" Margin="432,879,0,0" VerticalAlignment="Top" Width="37" Height="37"/>
+        <Button x:Name="BuR1" Content="R1" Margin="966,890,0,0" VerticalAlignment="Top" Width="37" Height="37"/>
+        <Button x:Name="BuR2" Content="R2" Margin="1027,890,0,0" VerticalAlignment="Top" Width="37" Height="37"/>
+        <Button x:Name="BuR3" Content="R3" Margin="1086,890,0,0" VerticalAlignment="Top" Width="37" Height="37"/>
+        <Button x:Name="BuR4" Content="R4" Margin="1141,890,0,0" VerticalAlignment="Top" Width="37" Height="37"/>
+        <Button x:Name="BuY1" Content="Y1" Margin="283,113,0,0" VerticalAlignment="Top" Width="37" Height="37"/>
+        <Button x:Name="BuY2" Content="Y2" Margin="344,113,0,0" VerticalAlignment="Top" Width="37" Height="37"/>
+        <Button x:Name="BuY3" Content="Y3" Margin="403,113,0,0" VerticalAlignment="Top" Width="37" Height="37"/>
+        <Button x:Name="BuY4" Content="Y4" Margin="458,113,0,0" VerticalAlignment="Top" Width="37" Height="37"/>
+        <Button x:Name="BuG1" Content="G1" Margin="985,113,0,0" VerticalAlignment="Top" Width="37" Height="37"/>
+        <Button x:Name="BuG2" Content="G2" Margin="1046,113,0,0" VerticalAlignment="Top" Width="37" Height="37"/>
+        <Button x:Name="BuG3" Content="G3" Margin="1105,113,0,0" VerticalAlignment="Top" Width="37" Height="37"/>
+        <Button x:Name="BuG4" Content="G4" Margin="1160,113,0,0" VerticalAlignment="Top" Width="37" Height="37"/>
     </Grid>
 </Page>
