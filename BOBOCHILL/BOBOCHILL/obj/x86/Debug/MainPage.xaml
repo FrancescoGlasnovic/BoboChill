@@ -194,6 +194,7 @@
         <Ellipse HorizontalAlignment="Left" Height="140" Margin="989,297,0,0" Stroke="Red" VerticalAlignment="Top" Width="140" Grid.Row="1"/>
         <Ellipse HorizontalAlignment="Left" Height="140" Margin="1005,167,0,0" Stroke="Black" VerticalAlignment="Top" Width="140"/>
         <TextBlock x:ConnectionId='94' x:Name="Ima" HorizontalAlignment="Left" Margin="42,107,0,0" Text="Na redu je igrač broj:" TextWrapping="Wrap" VerticalAlignment="Top"                                                 Grid.Row="1"/>
+        <TextBlock x:ConnectionId='95' HorizontalAlignment="Left" Margin="-50,52,0,0" Text="BOBOCHILL" TextWrapping="Wrap" VerticalAlignment="Top"                                                 Height="104" Width="222" FontSize="40"/>
     </Grid>
 </Page>
 

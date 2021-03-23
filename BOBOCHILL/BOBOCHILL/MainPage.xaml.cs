@@ -6163,5 +6163,10 @@ namespace BOBOCHILL
         {
 
         }
+
+        private void TextBlock_SelectionChanged_6(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
