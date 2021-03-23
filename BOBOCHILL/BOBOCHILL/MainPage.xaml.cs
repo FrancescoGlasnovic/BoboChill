@@ -1479,7 +1479,7 @@ namespace BOBOCHILL
                     case 39:
                         Poz39.Text = " .";
                         break;
-                    case 40:
+                    case 0:
                         B_Kraj_0_.Text = " .";
                         break;
 
@@ -2429,7 +2429,7 @@ namespace BOBOCHILL
                     case 39:
                         Poz39.Text = " .";
                         break;
-                    case 40:
+                    case 0:
                         B_Kraj_0_.Text = " .";
                         break;
 
@@ -2699,7 +2699,7 @@ namespace BOBOCHILL
                     case 39:
                         Poz39.Text = " .";
                         break;
-                    case 40:
+                    case 0:
                         B_Kraj_0_.Text = " .";
                         break;
 
