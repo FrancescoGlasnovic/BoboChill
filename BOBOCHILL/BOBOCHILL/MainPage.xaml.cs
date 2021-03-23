@@ -326,7 +326,7 @@ namespace BOBOCHILL
                     pozicijaY1 -= 40;
                     prviY1_Izaso = 1;
                 }
-                if (prviY1_Izaso == 1 && pozicijaY1 > 10)
+                if (prviY1_Izaso == 1 && pozicijaY1 > 14)
                 {
                     pozicijaY1 -= d;
                 }
@@ -399,7 +399,7 @@ namespace BOBOCHILL
                     pozicijaY4 = -11;
                     prviY4_Izaso = 0;
                 }
-                if (prviG1_Izaso == 1 && pozicijaG1 > 20)
+                if (prviG1_Izaso == 1 && pozicijaG1 > 24)
                 {
                     pozicijaG1 -= d;
                 }
@@ -482,7 +482,7 @@ namespace BOBOCHILL
                     prviR1_Izaso = 1;
 
                 }
-                if (prviR1_Izaso == 1 && pozicijaR1 > 30)
+                if (prviR1_Izaso == 1 && pozicijaR1 > 34)
                 {
                     pozicijaR1 -= d;
                 }
@@ -1814,7 +1814,7 @@ namespace BOBOCHILL
                     prviY2_Izaso = 1;
                 }
                
-                if (prviY2_Izaso == 1 && pozicijaY2 > 10)
+                if (prviY2_Izaso == 1 && pozicijaY2 > 14)
                 {
                     pozicijaY2 -= d;
                 }
@@ -1894,7 +1894,7 @@ namespace BOBOCHILL
 
 
                 }
-                if (prviG2_Izaso == 1 && pozicijaG2 > 20)
+                if (prviG2_Izaso == 1 && pozicijaG2 > 24)
                 {
                     pozicijaG2 -= d;
                 }
@@ -1971,7 +1971,7 @@ namespace BOBOCHILL
                     prviR2_Izaso = 1;
 
                 }
-                if (prviR2_Izaso == 1 && pozicijaR2 > 30)
+                if (prviR2_Izaso == 1 && pozicijaR2 > 34)
                 {
                     pozicijaR2 -= d;
                 }
@@ -3325,7 +3325,7 @@ namespace BOBOCHILL
                     pozicijaY3 -= 40;
                     prviY3_Izaso = 1;
                 }
-                if (prviY3_Izaso == 1 && pozicijaY3 > 10)
+                if (prviY3_Izaso == 1 && pozicijaY3 > 14)
                 {
                     pozicijaY3 -= d;
                 }
@@ -3405,7 +3405,7 @@ namespace BOBOCHILL
 
 
                 }
-                if (prviG3_Izaso == 1 && pozicijaG3 > 20)
+                if (prviG3_Izaso == 1 && pozicijaG3 > 24)
                 {
                     pozicijaG3 -= d;
                 }
@@ -3482,7 +3482,7 @@ namespace BOBOCHILL
                     prviR3_Izaso = 1;
 
                 }
-                if (prviR3_Izaso == 1 && pozicijaR3 > 30)
+                if (prviR3_Izaso == 1 && pozicijaR3 > 34)
                 {
                     pozicijaR3 -= d;
                 }
@@ -4820,7 +4820,7 @@ namespace BOBOCHILL
                     pozicijaY4 -= 40;
                     prviY4_Izaso = 1;
                 }
-                if (prviY4_Izaso == 1 && pozicijaY4 > 10)
+                if (prviY4_Izaso == 1 && pozicijaY4 > 14)
                 {
                     pozicijaY4 -= d;
                 }
@@ -4900,7 +4900,7 @@ namespace BOBOCHILL
 
 
                 }
-                if (prviG4_Izaso == 1 && pozicijaG4 > 20)
+                if (prviG4_Izaso == 1 && pozicijaG4 > 24)
                 {
                     pozicijaG4 -= d;
                 }
@@ -4977,7 +4977,7 @@ namespace BOBOCHILL
                     prviR4_Izaso = 1;
 
                 }
-                if (prviR4_Izaso == 1 && pozicijaR4 > 30)
+                if (prviR4_Izaso == 1 && pozicijaR4 > 34)
                 {
                     pozicijaR4 -= d;
                 }
