@@ -105,13 +105,21 @@ namespace BOBOCHILL
         int pozicijaG4 = -21;
         int pozicijaY4 = -11;
         int dozvola = 1;
-        int d;
+        int d=0;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
 
             Random rnd = new Random();
-            
+            if (d == 6)
+            {
+                naRedu--; 
+                if(naRedu==0)
+                {
+                    naRedu = 4;
+                }
+            }    
+                
             d = rnd.Next(1, 7);
             Kocka.Text = Convert.ToString(d);
             
@@ -119,8 +127,11 @@ namespace BOBOCHILL
                 brBacanja++;
             if (brBacanja >= 1)
             {
-                naRedu++;
-                brBacanja = 0;
+                
+                    naRedu++;
+
+                    brBacanja = 0;
+                
             }
 
             if (naRedu == 5)
@@ -185,6 +196,56 @@ namespace BOBOCHILL
                     prviY1_Izaso = 0;
                 }
 
+                else if (pozicijaB1 == pozicijaR2)
+                {
+                    pozicijaR2 = -31;
+                    prviR2_Izaso = 0;
+                }
+                else if (pozicijaB1 == pozicijaG2)
+                {
+                    pozicijaG2 = -21;
+                    prviG2_Izaso = 0;
+                }
+                else if (pozicijaB1 == pozicijaY2)
+                {
+                    pozicijaY2 = -11;
+                    prviY2_Izaso = 0;
+                }
+
+                else if (pozicijaB1 == pozicijaR3)
+                {
+                    pozicijaR3 = -31;
+                    prviR3_Izaso = 0;
+                }
+                else if (pozicijaB1 == pozicijaG3)
+                {
+                    pozicijaG3 = -21;
+                    prviG3_Izaso = 0;
+                }
+                else if (pozicijaB1 == pozicijaY3)
+                {
+                    pozicijaY3 = -11;
+                    prviY3_Izaso = 0;
+                }
+
+                else if (pozicijaB1 == pozicijaR4)
+                {
+                    pozicijaR4 = -31;
+                    prviR4_Izaso = 0;
+                }
+                else if (pozicijaB1 == pozicijaG4)
+                {
+                    pozicijaG4 = -21;
+                    prviG4_Izaso = 0;
+                }
+                else if (pozicijaB1 == pozicijaY4)
+                {
+                    pozicijaY4 = -11;
+                    prviY4_Izaso = 0;
+                }
+               
+            
+
 
                 if (pozicijaB1 > 44)
                 {
@@ -209,9 +270,56 @@ namespace BOBOCHILL
                 }
                 else if (pozicijaY1 == pozicijaB1)
                 {
-                    pozicijaB1 = -1;
+                    pozicijaB1 = -11;
                     prviB1_Izaso = 0;
+                }
 
+                else if (pozicijaY1 == pozicijaR2)
+                {
+                    pozicijaR2 = -31;
+                    prviR2_Izaso = 0;
+                }
+                else if (pozicijaY1 == pozicijaG2)
+                {
+                    pozicijaG2 = -21;
+                    prviG2_Izaso = 0;
+                }
+                else if (pozicijaY1 == pozicijaB2)
+                {
+                    pozicijaB2 = -11;
+                    prviB2_Izaso = 0;
+                }
+
+                else if (pozicijaY1 == pozicijaR3)
+                {
+                    pozicijaR3 = -31;
+                    prviR3_Izaso = 0;
+                }
+                else if (pozicijaY1 == pozicijaG3)
+                {
+                    pozicijaG3 = -21;
+                    prviG3_Izaso = 0;
+                }
+                else if (pozicijaY1 == pozicijaB3)
+                {
+                    pozicijaB3 = -11;
+                    prviB3_Izaso = 0;
+                }
+
+                else if (pozicijaY1 == pozicijaR4)
+                {
+                    pozicijaR4 = -31;
+                    prviR4_Izaso = 0;
+                }
+                else if (pozicijaY1 == pozicijaG4)
+                {
+                    pozicijaG4 = -21;
+                    prviG4_Izaso = 0;
+                }
+                else if (pozicijaY1 == pozicijaB4)
+                {
+                    pozicijaB4 = -11;
+                    prviB4_Izaso = 0;
                 }
                 if (pozicijaY1 >= 40)
                 {
@@ -235,7 +343,7 @@ namespace BOBOCHILL
                 }
                 else if (pozicijaG1 == pozicijaB1)
                 {
-                    pozicijaB1 = -1;
+                    pozicijaB1 = -21;
                     prviB1_Izaso = 0;
                 }
                 else if (pozicijaG1 == pozicijaY1)
@@ -243,16 +351,63 @@ namespace BOBOCHILL
                     pozicijaY1 = -11;
                     prviY1_Izaso = 0;
                 }
+
+                else if (pozicijaG1 == pozicijaR2)
+                {
+                    pozicijaR2 = -31;
+                    prviR2_Izaso = 0;
+                }
+                else if (pozicijaG1 == pozicijaB2)
+                {
+                    pozicijaB2 = -21;
+                    prviB2_Izaso = 0;
+                }
+                else if (pozicijaG1 == pozicijaY2)
+                {
+                    pozicijaY2 = -11;
+                    prviY2_Izaso = 0;
+                }
+
+                else if (pozicijaG1 == pozicijaR3)
+                {
+                    pozicijaR3 = -31;
+                    prviR3_Izaso = 0;
+                }
+                else if (pozicijaG1 == pozicijaB3)
+                {
+                    pozicijaB3 = -21;
+                    prviB3_Izaso = 0;
+                }
+                else if (pozicijaG1 == pozicijaY3)
+                {
+                    pozicijaY3 = -11;
+                    prviY3_Izaso = 0;
+                }
+
+                else if (pozicijaG1 == pozicijaR4)
+                {
+                    pozicijaR4 = -31;
+                    prviR4_Izaso = 0;
+                }
+                else if (pozicijaG1 == pozicijaB4)
+                {
+                    pozicijaB4 = -21;
+                    prviB4_Izaso = 0;
+                }
+                else if (pozicijaG1 == pozicijaY4)
+                {
+                    pozicijaY4 = -11;
+                    prviY4_Izaso = 0;
+                }
+                if (prviG1_Izaso == 1 && pozicijaG1 > 20)
+                {
+                    pozicijaG1 -= d;
+                }
                 if (pozicijaG1 >= 40)
                 {
                     pozicijaG1 -= 40;
                     prviG1_Izaso = 1;
 
-
-                }
-                if (prviG1_Izaso == 1 && pozicijaG1 > 20)
-                {
-                    pozicijaG1 -= d;
                 }
             }
             else if (naRedu == 4 && pozicijaR1 >= 0)
@@ -260,7 +415,7 @@ namespace BOBOCHILL
                 pozicijaR1 += d;
                 if (pozicijaR1 == pozicijaB1)
                 {
-                    pozicijaB1 = -1;
+                    pozicijaB1 = -31;
                     prviB1_Izaso = 0;
                 }
                 else if (pozicijaR1 == pozicijaG1)
@@ -272,6 +427,54 @@ namespace BOBOCHILL
                 {
                     pozicijaY1 = -11;
                     prviY1_Izaso = 0;
+                }
+
+                else if (pozicijaR1 == pozicijaB2)
+                {
+                    pozicijaB2 = -31;
+                    prviB2_Izaso = 0;
+                }
+                else if (pozicijaR1 == pozicijaG2)
+                {
+                    pozicijaG2 = -21;
+                    prviG2_Izaso = 0;
+                }
+                else if (pozicijaR1 == pozicijaY2)
+                {
+                    pozicijaY2 = -11;
+                    prviY2_Izaso = 0;
+                }
+
+                else if (pozicijaR1 == pozicijaB3)
+                {
+                    pozicijaB3 = -31;
+                    prviB3_Izaso = 0;
+                }
+                else if (pozicijaR1 == pozicijaG3)
+                {
+                    pozicijaG3 = -21;
+                    prviG3_Izaso = 0;
+                }
+                else if (pozicijaR1 == pozicijaY3)
+                {
+                    pozicijaY3 = -11;
+                    prviY3_Izaso = 0;
+                }
+
+                else if (pozicijaR1 == pozicijaB4)
+                {
+                    pozicijaB4 = -31;
+                    prviB4_Izaso = 0;
+                }
+                else if (pozicijaR1 == pozicijaG4)
+                {
+                    pozicijaG4 = -21;
+                    prviG4_Izaso = 0;
+                }
+                else if (pozicijaR1 == pozicijaY4)
+                {
+                    pozicijaY4 = -11;
+                    prviY4_Izaso = 0;
                 }
                 if (pozicijaR1 >= 40)
                 {
@@ -1425,12 +1628,25 @@ namespace BOBOCHILL
                 }
             }
             brBacanja++;
-            BrBac.Text = Convert.ToString(brBacanja);
+          
             
-            R5.Text = Convert.ToString(pozicijaR1);
-            B5.Text = Convert.ToString(pozicijaB1);
-            G5.Text = Convert.ToString(pozicijaG1);
-            Y5.Text = Convert.ToString(pozicijaY1);
+            if (BUlaz1.Text!="." && BUlaz2.Text != "." && BUlaz3.Text != "." && BUlaz4.Text != ".")
+            {
+                pobjeda.Text = "Pobijedio je plavi igrač!!!";
+            }
+            else if(RUlaz1.Text != "." && RUlaz2.Text != "." && RUlaz3.Text != "." && RUlaz4.Text != ".")
+            {
+                pobjeda.Text = "Pobijedio je crveni igrač!!!";
+            }
+            else if(YUlaz1.Text != "." && YUlaz2.Text != "." && YUlaz3.Text != "." && YUlaz4.Text != ".")
+            {
+                pobjeda.Text = "Pobijedio je žuti igrač!!!";
+            }
+            else if(GUlaz1.Text != "." && GUlaz2.Text != "." && GUlaz3.Text != "." && GUlaz4.Text != ".")
+            {
+                pobjeda.Text = "Pobijedio je zeleni igrač!!!";
+            }
+
         }
 
 
@@ -1453,7 +1669,23 @@ namespace BOBOCHILL
 
 
                 pozicijaB2 += d;
-                if (pozicijaB2 == pozicijaR2)
+                if (pozicijaB2 == pozicijaR1)
+                {
+                    pozicijaR1 = -31;
+                    prviR1_Izaso = 0;
+                }
+                else if (pozicijaB2 == pozicijaG1)
+                {
+                    pozicijaG1 = -21;
+                    prviG1_Izaso = 0;
+                }
+                else if (pozicijaB2 == pozicijaY1)
+                {
+                    pozicijaY1 = -11;
+                    prviY1_Izaso = 0;
+                }
+
+                else if (pozicijaB2 == pozicijaR2)
                 {
                     pozicijaR2 = -31;
                     prviR2_Izaso = 0;
@@ -1469,6 +1701,38 @@ namespace BOBOCHILL
                     prviY2_Izaso = 0;
                 }
 
+                else if (pozicijaB2 == pozicijaR3)
+                {
+                    pozicijaR3 = -31;
+                    prviR3_Izaso = 0;
+                }
+                else if (pozicijaB2 == pozicijaG3)
+                {
+                    pozicijaG3 = -21;
+                    prviG3_Izaso = 0;
+                }
+                else if (pozicijaB2 == pozicijaY3)
+                {
+                    pozicijaY3 = -11;
+                    prviY3_Izaso = 0;
+                }
+
+                else if (pozicijaB2 == pozicijaR4)
+                {
+                    pozicijaR4 = -31;
+                    prviR4_Izaso = 0;
+                }
+                else if (pozicijaB2 == pozicijaG4)
+                {
+                    pozicijaG4 = -21;
+                    prviG4_Izaso = 0;
+                }
+                else if (pozicijaB2 == pozicijaY4)
+                {
+                    pozicijaY4 = -11;
+                    prviY4_Izaso = 0;
+                }
+
 
                 if (pozicijaB2 > 44)
                 {
@@ -1481,7 +1745,23 @@ namespace BOBOCHILL
             {
 
                 pozicijaY2 += d;
-                if (pozicijaY2 == pozicijaR2)
+                if (pozicijaY2 == pozicijaR1)
+                {
+                    pozicijaR1 = -31;
+                    prviR1_Izaso = 0;
+                }
+                else if (pozicijaY2 == pozicijaG1)
+                {
+                    pozicijaG1 = -21;
+                    prviG1_Izaso = 0;
+                }
+                else if (pozicijaY2 == pozicijaB1)
+                {
+                    pozicijaB1 = -11;
+                    prviB1_Izaso = 0;
+                }
+
+                else if (pozicijaY2 == pozicijaR2)
                 {
                     pozicijaR2 = -31;
                     prviR2_Izaso = 0;
@@ -1493,15 +1773,47 @@ namespace BOBOCHILL
                 }
                 else if (pozicijaY2 == pozicijaB2)
                 {
-                    pozicijaB2 = -1;
+                    pozicijaB2 = -11;
                     prviB2_Izaso = 0;
+                }
 
+                else if (pozicijaY2 == pozicijaR3)
+                {
+                    pozicijaR3 = -31;
+                    prviR3_Izaso = 0;
+                }
+                else if (pozicijaY2 == pozicijaG3)
+                {
+                    pozicijaG3 = -21;
+                    prviG3_Izaso = 0;
+                }
+                else if (pozicijaY2 == pozicijaB3)
+                {
+                    pozicijaB3 = -11;
+                    prviB3_Izaso = 0;
+                }
+
+                else if (pozicijaY2 == pozicijaR4)
+                {
+                    pozicijaR4 = -31;
+                    prviR4_Izaso = 0;
+                }
+                else if (pozicijaY2 == pozicijaG4)
+                {
+                    pozicijaG4 = -21;
+                    prviG4_Izaso = 0;
+                }
+                else if (pozicijaY2 == pozicijaB4)
+                {
+                    pozicijaB4 = -11;
+                    prviB4_Izaso = 0;
                 }
                 if (pozicijaY2 >= 40)
                 {
                     pozicijaY2 -= 40;
                     prviY2_Izaso = 1;
                 }
+               
                 if (prviY2_Izaso == 1 && pozicijaY2 > 10)
                 {
                     pozicijaY2 -= d;
@@ -1512,20 +1824,68 @@ namespace BOBOCHILL
             {
 
                 pozicijaG2 += d;
-                if (pozicijaG2 == pozicijaR2)
+                if (pozicijaG2 == pozicijaR1)
+                {
+                    pozicijaR1 = -31;
+                    prviR1_Izaso = 0;
+                }
+                else if (pozicijaG2 == pozicijaB1)
+                {
+                    pozicijaB1 = -21;
+                    prviB1_Izaso = 0;
+                }
+                else if (pozicijaG2 == pozicijaY1)
+                {
+                    pozicijaY1 = -11;
+                    prviY1_Izaso = 0;
+                }
+
+                else if (pozicijaG2 == pozicijaR2)
                 {
                     pozicijaR2 = -31;
                     prviR2_Izaso = 0;
                 }
                 else if (pozicijaG2 == pozicijaB2)
                 {
-                    pozicijaB2 = -1;
+                    pozicijaB2 = -21;
                     prviB2_Izaso = 0;
                 }
                 else if (pozicijaG2 == pozicijaY2)
                 {
                     pozicijaY2 = -11;
                     prviY2_Izaso = 0;
+                }
+
+                else if (pozicijaG2 == pozicijaR3)
+                {
+                    pozicijaR3 = -31;
+                    prviR3_Izaso = 0;
+                }
+                else if (pozicijaG2 == pozicijaB3)
+                {
+                    pozicijaB3 = -21;
+                    prviB3_Izaso = 0;
+                }
+                else if (pozicijaG2 == pozicijaY3)
+                {
+                    pozicijaY3 = -11;
+                    prviY3_Izaso = 0;
+                }
+
+                else if (pozicijaG2 == pozicijaR4)
+                {
+                    pozicijaR4 = -31;
+                    prviR4_Izaso = 0;
+                }
+                else if (pozicijaG2 == pozicijaB4)
+                {
+                    pozicijaB4 = -21;
+                    prviB4_Izaso = 0;
+                }
+                else if (pozicijaG2 == pozicijaY4)
+                {
+                    pozicijaY4 = -11;
+                    prviY4_Izaso = 0;
                 }
                 if (pozicijaG2 >= 40)
                 {
@@ -1542,9 +1902,25 @@ namespace BOBOCHILL
             else if (naRedu == 4 && pozicijaR2 >= 0)
             {
                 pozicijaR2 += d;
-                if (pozicijaR2 == pozicijaB2)
+                if (pozicijaR2 == pozicijaB1)
                 {
-                    pozicijaB2 = -1;
+                    pozicijaB1 = -31;
+                    prviB1_Izaso = 0;
+                }
+                else if (pozicijaR2 == pozicijaG1)
+                {
+                    pozicijaG1 = -21;
+                    prviG1_Izaso = 0;
+                }
+                else if (pozicijaR2 == pozicijaY1)
+                {
+                    pozicijaY1 = -11;
+                    prviY1_Izaso = 0;
+                }
+
+                else if (pozicijaR2 == pozicijaB2)
+                {
+                    pozicijaB2 = -31;
                     prviB2_Izaso = 0;
                 }
                 else if (pozicijaR2 == pozicijaG2)
@@ -1555,7 +1931,39 @@ namespace BOBOCHILL
                 else if (pozicijaR2 == pozicijaY2)
                 {
                     pozicijaY2 = -11;
-                    prviY1_Izaso = 0;
+                    prviY2_Izaso = 0;
+                }
+
+                else if (pozicijaR2 == pozicijaB3)
+                {
+                    pozicijaB3 = -31;
+                    prviB3_Izaso = 0;
+                }
+                else if (pozicijaR2 == pozicijaG3)
+                {
+                    pozicijaG3 = -21;
+                    prviG3_Izaso = 0;
+                }
+                else if (pozicijaR2 == pozicijaY3)
+                {
+                    pozicijaY3 = -11;
+                    prviY3_Izaso = 0;
+                }
+
+                else if (pozicijaR2 == pozicijaB4)
+                {
+                    pozicijaB4 = -31;
+                    prviB4_Izaso = 0;
+                }
+                else if (pozicijaR2 == pozicijaG4)
+                {
+                    pozicijaG4 = -21;
+                    prviG4_Izaso = 0;
+                }
+                else if (pozicijaR2 == pozicijaY4)
+                {
+                    pozicijaY4 = -11;
+                    prviY4_Izaso = 0;
                 }
                 if (pozicijaR2 >= 40)
                 {
@@ -2162,7 +2570,7 @@ namespace BOBOCHILL
                     case 39:
                         Poz39.Text = Y2.Text;
                         break;
-                    case 40:
+                    case 0:
                         B_Kraj_0_.Text = Y2.Text;
                         pozicijaY2 = 0;
                         break;
@@ -2431,7 +2839,7 @@ namespace BOBOCHILL
                     case 39:
                         Poz39.Text = G2.Text;
                         break;
-                    case 40:
+                    case 0:
                         B_Kraj_0_.Text = G2.Text;
                         pozicijaG2 = 0;
                         break;
@@ -2560,7 +2968,7 @@ namespace BOBOCHILL
                     case 39:
                         Poz39.Text = " .";
                         break;
-                    case 40:
+                    case 0:
                         B_Kraj_0_.Text = " .";
                         break;
 
@@ -2700,7 +3108,7 @@ namespace BOBOCHILL
                     case 39:
                         Poz39.Text = R2.Text;
                         break;
-                    case 40:
+                    case 0:
                         B_Kraj_0_.Text = R2.Text;
                         pozicijaR1 = 0;
                         break;
@@ -2709,12 +3117,23 @@ namespace BOBOCHILL
                 }
             }
             brBacanja++;
-            BrBac.Text = Convert.ToString(brBacanja);
-            
-            R5.Text = Convert.ToString(pozicijaR1);
-            B5.Text = Convert.ToString(pozicijaB1);
-            G5.Text = Convert.ToString(pozicijaG1);
-            Y5.Text = Convert.ToString(pozicijaY1);
+           
+            if (BUlaz1.Text != "." && BUlaz2.Text != "." && BUlaz3.Text != "." && BUlaz4.Text != ".")
+            {
+                pobjeda.Text = "Pobijedio je plavi igrač!!!";
+            }
+            else if (RUlaz1.Text != "." && RUlaz2.Text != "." && RUlaz3.Text != "." && RUlaz4.Text != ".")
+            {
+                pobjeda.Text = "Pobijedio je crveni igrač!!!";
+            }
+            else if (YUlaz1.Text != "." && YUlaz2.Text != "." && YUlaz3.Text != "." && YUlaz4.Text != ".")
+            {
+                pobjeda.Text = "Pobijedio je žuti igrač!!!";
+            }
+            else if (GUlaz1.Text != "." && GUlaz2.Text != "." && GUlaz3.Text != "." && GUlaz4.Text != ".")
+            {
+                pobjeda.Text = "Pobijedio je zeleni igrač!!!";
+            }
         }
 
         private void TextBlock_SelectionChanged_3(object sender, RoutedEventArgs e)
@@ -2761,7 +3180,39 @@ namespace BOBOCHILL
 
 
                 pozicijaB3 += d;
-                if (pozicijaB3 == pozicijaR3)
+                if (pozicijaB3 == pozicijaR1)
+                {
+                    pozicijaR1 = -31;
+                    prviR1_Izaso = 0;
+                }
+                else if (pozicijaB3 == pozicijaG1)
+                {
+                    pozicijaG1 = -21;
+                    prviG1_Izaso = 0;
+                }
+                else if (pozicijaB3 == pozicijaY1)
+                {
+                    pozicijaY1 = -11;
+                    prviY1_Izaso = 0;
+                }
+
+                else if (pozicijaB3 == pozicijaR2)
+                {
+                    pozicijaR2 = -31;
+                    prviR2_Izaso = 0;
+                }
+                else if (pozicijaB3 == pozicijaG2)
+                {
+                    pozicijaG2 = -21;
+                    prviG2_Izaso = 0;
+                }
+                else if (pozicijaB3 == pozicijaY2)
+                {
+                    pozicijaY2 = -11;
+                    prviY2_Izaso = 0;
+                }
+
+                else if (pozicijaB3 == pozicijaR3)
                 {
                     pozicijaR3 = -31;
                     prviR3_Izaso = 0;
@@ -2777,6 +3228,22 @@ namespace BOBOCHILL
                     prviY3_Izaso = 0;
                 }
 
+                else if (pozicijaB3 == pozicijaR4)
+                {
+                    pozicijaR4 = -31;
+                    prviR4_Izaso = 0;
+                }
+                else if (pozicijaB3 == pozicijaG4)
+                {
+                    pozicijaG4 = -21;
+                    prviG4_Izaso = 0;
+                }
+                else if (pozicijaB3 == pozicijaY4)
+                {
+                    pozicijaY4 = -11;
+                    prviY4_Izaso = 0;
+                }
+
 
                 if (pozicijaB3 > 44)
                 {
@@ -2789,7 +3256,39 @@ namespace BOBOCHILL
             {
 
                 pozicijaY3 += d;
-                if (pozicijaY3 == pozicijaR3)
+                if (pozicijaY3 == pozicijaR1)
+                {
+                    pozicijaR1 = -31;
+                    prviR1_Izaso = 0;
+                }
+                else if (pozicijaY3 == pozicijaG1)
+                {
+                    pozicijaG1 = -21;
+                    prviG1_Izaso = 0;
+                }
+                else if (pozicijaY3 == pozicijaB1)
+                {
+                    pozicijaB1 = -11;
+                    prviB1_Izaso = 0;
+                }
+
+                else if (pozicijaY3 == pozicijaR2)
+                {
+                    pozicijaR2 = -31;
+                    prviR2_Izaso = 0;
+                }
+                else if (pozicijaY3 == pozicijaG2)
+                {
+                    pozicijaG2 = -21;
+                    prviG2_Izaso = 0;
+                }
+                else if (pozicijaY3 == pozicijaB2)
+                {
+                    pozicijaB2 = -11;
+                    prviB2_Izaso = 0;
+                }
+
+                else if (pozicijaY3 == pozicijaR3)
                 {
                     pozicijaR3 = -31;
                     prviR3_Izaso = 0;
@@ -2801,10 +3300,26 @@ namespace BOBOCHILL
                 }
                 else if (pozicijaY3 == pozicijaB3)
                 {
-                    pozicijaB3 = -1;
+                    pozicijaB3 = -11;
                     prviB3_Izaso = 0;
-
                 }
+
+                else if (pozicijaY3 == pozicijaR4)
+                {
+                    pozicijaR4 = -31;
+                    prviR4_Izaso = 0;
+                }
+                else if (pozicijaY3 == pozicijaG4)
+                {
+                    pozicijaG4 = -21;
+                    prviG4_Izaso = 0;
+                }
+                else if (pozicijaY3 == pozicijaB4)
+                {
+                    pozicijaB4 = -11;
+                    prviB4_Izaso = 0;
+                }
+                
                 if (pozicijaY3 >= 40)
                 {
                     pozicijaY3 -= 40;
@@ -2820,20 +3335,68 @@ namespace BOBOCHILL
             {
 
                 pozicijaG3 += d;
-                if (pozicijaG3 == pozicijaR3)
+                if (pozicijaG3 == pozicijaR1)
+                {
+                    pozicijaR1 = -31;
+                    prviR1_Izaso = 0;
+                }
+                else if (pozicijaG3 == pozicijaB1)
+                {
+                    pozicijaB1 = -21;
+                    prviB1_Izaso = 0;
+                }
+                else if (pozicijaG3 == pozicijaY1)
+                {
+                    pozicijaY1 = -11;
+                    prviY1_Izaso = 0;
+                }
+
+                else if (pozicijaG3 == pozicijaR2)
+                {
+                    pozicijaR2 = -31;
+                    prviR2_Izaso = 0;
+                }
+                else if (pozicijaG3 == pozicijaB2)
+                {
+                    pozicijaB2 = -21;
+                    prviB2_Izaso = 0;
+                }
+                else if (pozicijaG3 == pozicijaY2)
+                {
+                    pozicijaY2 = -11;
+                    prviY2_Izaso = 0;
+                }
+
+                else if (pozicijaG3 == pozicijaR3)
                 {
                     pozicijaR3 = -31;
                     prviR3_Izaso = 0;
                 }
                 else if (pozicijaG3 == pozicijaB3)
                 {
-                    pozicijaB3 = -1;
+                    pozicijaB3 = -21;
                     prviB3_Izaso = 0;
                 }
                 else if (pozicijaG3 == pozicijaY3)
                 {
                     pozicijaY3 = -11;
                     prviY3_Izaso = 0;
+                }
+
+                else if (pozicijaG3 == pozicijaR4)
+                {
+                    pozicijaR4 = -31;
+                    prviR4_Izaso = 0;
+                }
+                else if (pozicijaG3 == pozicijaB4)
+                {
+                    pozicijaB4 = -21;
+                    prviB4_Izaso = 0;
+                }
+                else if (pozicijaG3 == pozicijaY4)
+                {
+                    pozicijaY4 = -11;
+                    prviY4_Izaso = 0;
                 }
                 if (pozicijaG3 >= 40)
                 {
@@ -2850,9 +3413,41 @@ namespace BOBOCHILL
             else if (naRedu == 4 && pozicijaR3 >= 0)
             {
                 pozicijaR3 += d;
-                if (pozicijaR3 == pozicijaB3)
+                if (pozicijaR3 == pozicijaB1)
                 {
-                    pozicijaB3 = -1;
+                    pozicijaB1 = -31;
+                    prviB1_Izaso = 0;
+                }
+                else if (pozicijaR3 == pozicijaG1)
+                {
+                    pozicijaG1 = -21;
+                    prviG1_Izaso = 0;
+                }
+                else if (pozicijaR3 == pozicijaY1)
+                {
+                    pozicijaY1 = -11;
+                    prviY1_Izaso = 0;
+                }
+
+                else if (pozicijaR3 == pozicijaB2)
+                {
+                    pozicijaB2 = -31;
+                    prviB2_Izaso = 0;
+                }
+                else if (pozicijaR3 == pozicijaG2)
+                {
+                    pozicijaG2 = -21;
+                    prviG2_Izaso = 0;
+                }
+                else if (pozicijaR3 == pozicijaY2)
+                {
+                    pozicijaY2 = -11;
+                    prviY2_Izaso = 0;
+                }
+
+                else if (pozicijaR3 == pozicijaB3)
+                {
+                    pozicijaB3 = -31;
                     prviB3_Izaso = 0;
                 }
                 else if (pozicijaR3 == pozicijaG3)
@@ -2864,6 +3459,22 @@ namespace BOBOCHILL
                 {
                     pozicijaY3 = -11;
                     prviY3_Izaso = 0;
+                }
+
+                else if (pozicijaR3 == pozicijaB4)
+                {
+                    pozicijaB4 = -31;
+                    prviB4_Izaso = 0;
+                }
+                else if (pozicijaR3 == pozicijaG4)
+                {
+                    pozicijaG4 = -21;
+                    prviG4_Izaso = 0;
+                }
+                else if (pozicijaR3 == pozicijaY4)
+                {
+                    pozicijaY4 = -11;
+                    prviY4_Izaso = 0;
                 }
                 if (pozicijaR3 >= 40)
                 {
@@ -3329,7 +3940,7 @@ namespace BOBOCHILL
                     case 39:
                         Poz39.Text = " .";
                         break;
-                    case 40:
+                    case 0:
                         B_Kraj_0_.Text = " .";
                         break;
 
@@ -3470,7 +4081,7 @@ namespace BOBOCHILL
                     case 39:
                         Poz39.Text = Y3.Text;
                         break;
-                    case 40:
+                    case 0:
                         B_Kraj_0_.Text = Y3.Text;
                         pozicijaY3 = 0;
                         break;
@@ -3599,7 +4210,7 @@ namespace BOBOCHILL
                     case 39:
                         Poz39.Text = " .";
                         break;
-                    case 40:
+                    case 0:
                         B_Kraj_0_.Text = " .";
                         break;
 
@@ -3739,7 +4350,7 @@ namespace BOBOCHILL
                     case 39:
                         Poz39.Text = G3.Text;
                         break;
-                    case 40:
+                    case 0:
                         B_Kraj_0_.Text = G3.Text;
                         pozicijaG3 = 0;
                         break;
@@ -3868,7 +4479,7 @@ namespace BOBOCHILL
                     case 39:
                         Poz39.Text = " .";
                         break;
-                    case 40:
+                    case 0:
                         B_Kraj_0_.Text = " .";
                         break;
 
@@ -4008,7 +4619,7 @@ namespace BOBOCHILL
                     case 39:
                         Poz39.Text = R3.Text;
                         break;
-                    case 40:
+                    case 0:
                         B_Kraj_0_.Text = R3.Text;
                         pozicijaR3 = 0;
                         break;
@@ -4017,7 +4628,7 @@ namespace BOBOCHILL
                 }
             }
             brBacanja++;
-            BrBac.Text = Convert.ToString(brBacanja);
+            
             if (brBacanja == 1)
             {
                 naRedu++;
@@ -4028,10 +4639,23 @@ namespace BOBOCHILL
             {
                 naRedu = 1;
             }
-            R5.Text = Convert.ToString(pozicijaR1);
-            B5.Text = Convert.ToString(pozicijaB1);
-            G5.Text = Convert.ToString(pozicijaG1);
-            Y5.Text = Convert.ToString(pozicijaY1);
+           
+            if (BUlaz1.Text != "." && BUlaz2.Text != "." && BUlaz3.Text != "." && BUlaz4.Text != ".")
+            {
+                pobjeda.Text = "Pobijedio je plavi igrač!!!";
+            }
+            else if (RUlaz1.Text != "." && RUlaz2.Text != "." && RUlaz3.Text != "." && RUlaz4.Text != ".")
+            {
+                pobjeda.Text = "Pobijedio je crveni igrač!!!";
+            }
+            else if (YUlaz1.Text != "." && YUlaz2.Text != "." && YUlaz3.Text != "." && YUlaz4.Text != ".")
+            {
+                pobjeda.Text = "Pobijedio je žuti igrač!!!";
+            }
+            else if (GUlaz1.Text != "." && GUlaz2.Text != "." && GUlaz3.Text != "." && GUlaz4.Text != ".")
+            {
+                pobjeda.Text = "Pobijedio je zeleni igrač!!!";
+            }
         }
 
 
@@ -4052,7 +4676,55 @@ namespace BOBOCHILL
 
 
                 pozicijaB4 += d;
-                if (pozicijaB4 == pozicijaR4)
+                if (pozicijaB4 == pozicijaR1)
+                {
+                    pozicijaR1 = -31;
+                    prviR1_Izaso = 0;
+                }
+                else if (pozicijaB4 == pozicijaG1)
+                {
+                    pozicijaG1 = -21;
+                    prviG1_Izaso = 0;
+                }
+                else if (pozicijaB4 == pozicijaY1)
+                {
+                    pozicijaY1 = -11;
+                    prviY1_Izaso = 0;
+                }
+
+                else if (pozicijaB4 == pozicijaR2)
+                {
+                    pozicijaR2 = -31;
+                    prviR2_Izaso = 0;
+                }
+                else if (pozicijaB4 == pozicijaG2)
+                {
+                    pozicijaG2 = -21;
+                    prviG2_Izaso = 0;
+                }
+                else if (pozicijaB4 == pozicijaY2)
+                {
+                    pozicijaY2 = -11;
+                    prviY2_Izaso = 0;
+                }
+
+                else if (pozicijaB4 == pozicijaR3)
+                {
+                    pozicijaR3 = -31;
+                    prviR3_Izaso = 0;
+                }
+                else if (pozicijaB4 == pozicijaG3)
+                {
+                    pozicijaG3 = -21;
+                    prviG3_Izaso = 0;
+                }
+                else if (pozicijaB4 == pozicijaY3)
+                {
+                    pozicijaY3 = -11;
+                    prviY3_Izaso = 0;
+                }
+
+                else if (pozicijaB4 == pozicijaR4)
                 {
                     pozicijaR4 = -31;
                     prviR4_Izaso = 0;
@@ -4068,7 +4740,6 @@ namespace BOBOCHILL
                     prviY4_Izaso = 0;
                 }
 
-
                 if (pozicijaB4 > 44)
                 {
                     pozicijaB4 -= d;
@@ -4080,7 +4751,55 @@ namespace BOBOCHILL
             {
 
                 pozicijaY4 += d;
-                if (pozicijaY4 == pozicijaR4)
+                if (pozicijaY4 == pozicijaR1)
+                {
+                    pozicijaR1 = -31;
+                    prviR1_Izaso = 0;
+                }
+                else if (pozicijaY4 == pozicijaG1)
+                {
+                    pozicijaG1 = -21;
+                    prviG1_Izaso = 0;
+                }
+                else if (pozicijaY4 == pozicijaB1)
+                {
+                    pozicijaB1 = -11;
+                    prviB1_Izaso = 0;
+                }
+
+                else if (pozicijaY4 == pozicijaR2)
+                {
+                    pozicijaR2 = -31;
+                    prviR2_Izaso = 0;
+                }
+                else if (pozicijaY4 == pozicijaG2)
+                {
+                    pozicijaG2 = -21;
+                    prviG2_Izaso = 0;
+                }
+                else if (pozicijaY4 == pozicijaB2)
+                {
+                    pozicijaB2 = -11;
+                    prviB2_Izaso = 0;
+                }
+
+                else if (pozicijaY4 == pozicijaR3)
+                {
+                    pozicijaR3 = -31;
+                    prviR3_Izaso = 0;
+                }
+                else if (pozicijaY4 == pozicijaG3)
+                {
+                    pozicijaG3 = -21;
+                    prviG3_Izaso = 0;
+                }
+                else if (pozicijaY4 == pozicijaB3)
+                {
+                    pozicijaB3 = -11;
+                    prviB3_Izaso = 0;
+                }
+
+                else if (pozicijaY4 == pozicijaR4)
                 {
                     pozicijaR4 = -31;
                     prviR4_Izaso = 0;
@@ -4092,10 +4811,10 @@ namespace BOBOCHILL
                 }
                 else if (pozicijaY4 == pozicijaB4)
                 {
-                    pozicijaB4 = -1;
+                    pozicijaB4 = -11;
                     prviB4_Izaso = 0;
-
                 }
+               
                 if (pozicijaY4 >= 40)
                 {
                     pozicijaY4 -= 40;
@@ -4111,14 +4830,62 @@ namespace BOBOCHILL
             {
 
                 pozicijaG4 += d;
-                if (pozicijaG4 == pozicijaR4)
+                if (pozicijaG4 == pozicijaR1)
+                {
+                    pozicijaR1 = -31;
+                    prviR1_Izaso = 0;
+                }
+                else if (pozicijaG4 == pozicijaB1)
+                {
+                    pozicijaB1 = -21;
+                    prviB1_Izaso = 0;
+                }
+                else if (pozicijaG4 == pozicijaY1)
+                {
+                    pozicijaY1 = -11;
+                    prviY1_Izaso = 0;
+                }
+
+                else if (pozicijaG4 == pozicijaR2)
+                {
+                    pozicijaR2 = -31;
+                    prviR2_Izaso = 0;
+                }
+                else if (pozicijaG4 == pozicijaB2)
+                {
+                    pozicijaB2 = -21;
+                    prviB2_Izaso = 0;
+                }
+                else if (pozicijaG4 == pozicijaY2)
+                {
+                    pozicijaY2 = -11;
+                    prviY2_Izaso = 0;
+                }
+
+                else if (pozicijaG4 == pozicijaR3)
+                {
+                    pozicijaR3 = -31;
+                    prviR3_Izaso = 0;
+                }
+                else if (pozicijaG4 == pozicijaB3)
+                {
+                    pozicijaB3 = -21;
+                    prviB3_Izaso = 0;
+                }
+                else if (pozicijaG4 == pozicijaY3)
+                {
+                    pozicijaY3 = -11;
+                    prviY3_Izaso = 0;
+                }
+
+                else if (pozicijaG4 == pozicijaR4)
                 {
                     pozicijaR4 = -31;
                     prviR4_Izaso = 0;
                 }
                 else if (pozicijaG4 == pozicijaB4)
                 {
-                    pozicijaB4 = -1;
+                    pozicijaB4 = -21;
                     prviB4_Izaso = 0;
                 }
                 else if (pozicijaG4 == pozicijaY4)
@@ -4141,9 +4908,57 @@ namespace BOBOCHILL
             else if (naRedu == 4 && pozicijaR4 >= 0)
             {
                 pozicijaR4 += d;
-                if (pozicijaR4 == pozicijaB4)
+                if (pozicijaR4 == pozicijaB1)
                 {
-                    pozicijaB4 = -1;
+                    pozicijaB1 = -31;
+                    prviB1_Izaso = 0;
+                }
+                else if (pozicijaR4 == pozicijaG1)
+                {
+                    pozicijaG1 = -21;
+                    prviG1_Izaso = 0;
+                }
+                else if (pozicijaR4 == pozicijaY1)
+                {
+                    pozicijaY1 = -11;
+                    prviY1_Izaso = 0;
+                }
+
+                else if (pozicijaR4 == pozicijaB2)
+                {
+                    pozicijaB2 = -31;
+                    prviB2_Izaso = 0;
+                }
+                else if (pozicijaR4 == pozicijaG2)
+                {
+                    pozicijaG2 = -21;
+                    prviG2_Izaso = 0;
+                }
+                else if (pozicijaR4 == pozicijaY2)
+                {
+                    pozicijaY2 = -11;
+                    prviY2_Izaso = 0;
+                }
+
+                else if (pozicijaR4 == pozicijaB3)
+                {
+                    pozicijaB3 = -31;
+                    prviB3_Izaso = 0;
+                }
+                else if (pozicijaR4 == pozicijaG3)
+                {
+                    pozicijaG3 = -21;
+                    prviG3_Izaso = 0;
+                }
+                else if (pozicijaR4 == pozicijaY3)
+                {
+                    pozicijaY3 = -11;
+                    prviY3_Izaso = 0;
+                }
+
+                else if (pozicijaR4 == pozicijaB4)
+                {
+                    pozicijaB4 = -31;
                     prviB4_Izaso = 0;
                 }
                 else if (pozicijaR4 == pozicijaG4)
@@ -4620,7 +5435,7 @@ namespace BOBOCHILL
                     case 39:
                         Poz39.Text = " .";
                         break;
-                    case 40:
+                    case 0:
                         B_Kraj_0_.Text = " .";
                         break;
 
@@ -4761,7 +5576,7 @@ namespace BOBOCHILL
                     case 39:
                         Poz39.Text = Y4.Text;
                         break;
-                    case 40:
+                    case 0:
                         B_Kraj_0_.Text = Y4.Text;
                         pozicijaY4 = 0;
                         break;
@@ -4890,7 +5705,7 @@ namespace BOBOCHILL
                     case 39:
                         Poz39.Text = " .";
                         break;
-                    case 40:
+                    case 0:
                         B_Kraj_0_.Text = " .";
                         break;
 
@@ -5030,7 +5845,7 @@ namespace BOBOCHILL
                     case 39:
                         Poz39.Text = G4.Text;
                         break;
-                    case 40:
+                    case 0:
                         B_Kraj_0_.Text = G4.Text;
                         pozicijaG4 = 0;
                         break;
@@ -5159,7 +5974,7 @@ namespace BOBOCHILL
                     case 39:
                         Poz39.Text = " .";
                         break;
-                    case 40:
+                    case 0:
                         B_Kraj_0_.Text = " .";
                         break;
 
@@ -5299,7 +6114,7 @@ namespace BOBOCHILL
                     case 39:
                         Poz39.Text = R4.Text;
                         break;
-                    case 40:
+                    case 0:
                         B_Kraj_0_.Text = R4.Text;
                         pozicijaR3 = 0;
                         break;
@@ -5308,7 +6123,7 @@ namespace BOBOCHILL
                 }
             }
             brBacanja++;
-            BrBac.Text = Convert.ToString(brBacanja);
+            
             if (brBacanja == 1)
             {
                 naRedu++;
@@ -5319,10 +6134,34 @@ namespace BOBOCHILL
             {
                 naRedu = 1;
             }
-            R5.Text = Convert.ToString(pozicijaR1);
-            B5.Text = Convert.ToString(pozicijaB1);
-            G5.Text = Convert.ToString(pozicijaG1);
-            Y5.Text = Convert.ToString(pozicijaY1);
+           
+
+            if (BUlaz1.Text != "." && BUlaz2.Text != "." && BUlaz3.Text != "." && BUlaz4.Text != ".")
+            {
+                pobjeda.Text = "Pobijedio je plavi igrač!!!";
+            }
+            else if (RUlaz1.Text != "." && RUlaz2.Text != "." && RUlaz3.Text != "." && RUlaz4.Text != ".")
+            {
+                pobjeda.Text = "Pobijedio je crveni igrač!!!";
+            }
+            else if (YUlaz1.Text != "." && YUlaz2.Text != "." && YUlaz3.Text != "." && YUlaz4.Text != ".")
+            {
+                pobjeda.Text = "Pobijedio je žuti igrač!!!";
+            }
+            else if (GUlaz1.Text != "." && GUlaz2.Text != "." && GUlaz3.Text != "." && GUlaz4.Text != ".")
+            {
+                pobjeda.Text = "Pobijedio je zeleni igrač!!!";
+            }
+        }
+
+        private void TextBlock_SelectionChanged_4(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBlock_SelectionChanged_5(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
